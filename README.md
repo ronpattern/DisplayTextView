@@ -14,3 +14,11 @@
         app:MultiLineAnimation="false"/>
        
 ## Attribute description
+
+** MaxTextSize : ** size of the characters during animation (default = textSize * 2)
+
+** AutoSizePadding : ** automatically calculate the padding so the animation is not partially hidden (default = true)
+
+** CharacterAnimatedTogether : ** number of animated characters at the same time (default = 2)
+
+** MultiLineAnimation : ** animate the entire paragraph, otherwise line by line (default = false)
