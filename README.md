@@ -14,6 +14,8 @@ Custom TextView that show text in animation
         android:textSize="28sp"
         app:MaxTextSize="80sp"
         app:AutoSizePadding="true"
+        app:AnimationDuration="3000"
+        app:TextViewInterpolator="linear"
         app:CharacterAnimatedTogether="2"
         app:MultiLineAnimation="false"/>
        
@@ -26,7 +28,9 @@ Custom TextView that show text in animation
 
 **CharacterAnimatedTogether :** number of animated characters at the same time (default = 2)
 
-**MultiLineAnimation :** animate the entire paragraph, otherwise line by line (default = false)
+**MultiLineAnimation :** animate the entire paragraph, otherwise line by line, if true the AnimationDuration is not respected (default = false)
+
+**TextViewInterpolator :** animation interpolator (default = linear)
 
 
 ## Examples
