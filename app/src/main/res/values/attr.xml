@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DisplayTextView">
+        <attr name="AnimationDuration" format="integer" />
+        <attr name="MaxTextSize" format="dimension" />
+        <attr name="MultiLineAnimation" format="boolean" />
+        <attr name="AutoSizePadding" format="boolean" />
+        <attr name="CharacterAnimatedTogether" format="integer" />
+        <attr name="TextViewInterpolator" format="integer">
+            <flag name="linear" value="0" />
+            <flag name="decelerate" value="1" />
+            <flag name="accelerate" value="2" />
+            <flag name="accelerate_decelerate" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
