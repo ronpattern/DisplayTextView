@@ -4,11 +4,25 @@
 Custom TextView that show text in animation
 
 
+## Download
+
+
+Include the following dependency in your build.gradle file :
+
+```
+dependencies {
+    ...
+    compile 'org.altmail:display-textview:1.0.0'
+}
+```
+
 ## Usage
+
 
     <org.altmail.displaytextview.DisplayTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/my_text_view"
         android:text="@string/message"
         android:layout_gravity="center"
         android:textSize="28sp"
@@ -18,8 +32,17 @@ Custom TextView that show text in animation
         app:TextViewInterpolator="linear"
         app:CharacterAnimatedTogether="2"
         app:MultiLineAnimation="false"/>
+        
+        
+**In main Activy or Fragment :**  
+
+```
+
+DisplayTextView myTextView = (DisplayTextView) findViewById(R.id.my_text_view);
+
+```
        
-## Attribute description
+### Attribute description
 
 
 **MaxTextSize :** size of characters during animation (default = textSize * 2)
