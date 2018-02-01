@@ -9,7 +9,7 @@ Custom TextView that show text in animation
 
 Include the following dependency in your build.gradle file :
 
-```
+```java
 dependencies {
     ...
     compile 'org.altmail:display-textview:1.0.0'
@@ -18,7 +18,7 @@ dependencies {
 
 ## Usage
 
-
+```xml
     <org.altmail.displaytextview.DisplayTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,13 +32,16 @@ dependencies {
         app:TextViewInterpolator="linear"
         app:CharacterAnimatedTogether="2"
         app:MultiLineAnimation="false"/>
-        
+```        
         
 **In main Activy or Fragment :**  
 
-```
+```java
 
 DisplayTextView myTextView = (DisplayTextView) findViewById(R.id.my_text_view);
+...
+myTextView.startAnimation();
+
 
 ```
        
@@ -58,7 +61,7 @@ DisplayTextView myTextView = (DisplayTextView) findViewById(R.id.my_text_view);
 
 ## Examples
 
-
+```xml
     <org.altmail.displaytextview.DisplayTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,11 +72,11 @@ DisplayTextView myTextView = (DisplayTextView) findViewById(R.id.my_text_view);
         app:AutoSizePadding="true"
         app:CharacterAnimatedTogether="3"
         app:MultiLineAnimation="false"/>
-        
+```       
 
 ![picture alt](https://github.com/ronpattern/DisplayTextView/blob/master/screenshot/screen2.gif)
 
-
+```xml
     <org.altmail.displaytextview.DisplayTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +87,7 @@ DisplayTextView myTextView = (DisplayTextView) findViewById(R.id.my_text_view);
         app:AutoSizePadding="true"
         app:CharacterAnimatedTogether="3"
         app:MultiLineAnimation="true"/>
-        
+```        
         
 ![picture alt](https://github.com/ronpattern/DisplayTextView/blob/master/screenshot/screen3.gif)
 
