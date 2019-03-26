@@ -12,7 +12,7 @@ Include the following dependency in your build.gradle file :
 ```java
 dependencies {
     ...
-    compile 'org.altmail:display-textview:1.0.0'
+    implementation 'org.altmail:display-textview:1.1'
 }
 ```
 
@@ -31,7 +31,8 @@ dependencies {
         app:AnimationDuration="3000"
         app:TextViewInterpolator="linear"
         app:CharacterAnimatedTogether="2"
-        app:MultiLineAnimation="false"/>
+        app:MultiLineAnimation="false"
+        app:hideUntilAnimation="true"/>
 ```        
         
 **In main Activy or Fragment :**  
@@ -57,6 +58,8 @@ myTextView.startAnimation();
 **MultiLineAnimation :** animate the entire paragraph, otherwise line by line, if true the AnimationDuration is not respected (default = false)
 
 **TextViewInterpolator :** animation interpolator (default = linear)
+
+**hideUntilAnimation :** hide text until animation starts
 
 
 ## Examples
